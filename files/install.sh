@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -e
 
+${which ifup} eth0
+
 echo "Installing dependencies..."
 if [ -x "$(command -v apt-get)" ]; then
   sudo apt-get update -y
